@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BestPrice</title>
+    <link rel="icon" href="assets/img/favicon.ico">
+    <meta name="author" content="Vicent Ribas">
+    <link rel="stylesheet" href="assets/bootstrap-5.0.2-dist/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="index.css" type="text/css"/>
+    <script src="assets/bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+    
+    <!-- Awesome Fonts -->
+    <script src="https://kit.fontawesome.com/02d8b39fed.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" id="nav-home" href="index.html">BP</a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="gestion.html">Gestion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">About</a>
+                    </li>
+                  </ul>
+                  <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Buscar producto" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                  </form>
+                </div>
+              </div>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+
+        <!-- Titulo -->
+        <section id="titulo">
+          <h1> PRODUCTOS DISPONIBLES </h1>
+        </section>
+
+        <!-- Imagen que se adapta en funcion del tamaño de la pantalla -->
+        <section id="imagenAdaptativa">
+          <picture>
+            <source media="(min-width:650px)" srcset="assets/img/bestPrice.png" class="img-principal2">
+            <source media="(min-width:465px)" srcset="assets/img/bestPrice.png" clas="img-principal2">
+            <img src="assets/img/bestPrice.png" class="img-principal">
+          </picture> 
+        </section>
+
+        <!-- Tarjetas de productos -->
+        <section id="productos">
+            <div class="row row-cols-1 row-cols-md-4 g-4" id="caja-productos">
+                <div class="col" id="test1">
+                  <div class="card"> 
+                    <div class="small-img">
+                      <!-- Enlace a tercera pagina del producto a modo de ejemplo, que se implementara en todos los elementos -->
+                      <a href="producto.html"><img src="assets/img/oreo.jpeg" class="card-img-top" alt="Oreo"></a>
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Oreo</h5>
+                      <p class="card-text">2.50€/kg</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col">
+                  <div class="card">
+                    <div class="card-img-box">
+                        <img src="assets/img/chocapic.jpeg" class="card-img-top" alt="Chocapic">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Chocapic</h5>
+                      <p class="card-text">4.50€/kg</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card">
+                    <div class="card-img-box">
+                        <img src="assets/img/philadelphia.jpeg" class="card-img-top" alt="Philadelphia">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Philadelphia</h5>
+                      <p class="card-text">7.00€/kg</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card">
+                    <div class="card-img-box">
+                        <img src="assets/img/philadelphia.jpeg" class="card-img-top" alt="Philadelphia">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Philadelphia</h5>
+                      <p class="card-text">7.00€/kg</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                    <div class="card">
+                        <div class="card-img-box">
+                            <img src="assets/img/philadelphia.jpeg" class="card-img-top" alt="Philadelphia">
+                        </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Philadelphia</h5>
+                        <p class="card-text">7.00€/kg</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="card">
+                        <div class="small-img">
+                          <img src="assets/img/oreo.jpeg" class="card-img-top" alt="Oreo">
+                        </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Oreo</h5>
+                        <p class="card-text">2.50€/kg</p>
+                      </div>
+                    </div>
+              </div>
+            </div>
+        </section>
+
+    </main>
+    
+    
+    <!-- FOOTER -->
+    <footer>
+      <div class="col">
+        <div class="col">
+          <a href="#"><i class="fa-brands fa-instagram fa-2xl"  id="social-media-icon-in"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter fa-2xl" id="social-media-icon-tw"></i></a>
+        </div>
+        <div id="copyright">
+            <p >© Copyright 2023</p>
+        </div>
+      </div>
+      
+    </footer>
+
+</body>
+</html>

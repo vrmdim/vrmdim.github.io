@@ -1,0 +1,51 @@
+/* Añadimos fuente personalizada */
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap');
+
+h1 { 
+    font-family: 'Cabin Sketch', cursive;
+    text-align: center;
+}
+
+#container-gestion-up {
+    padding: 3rem;
+}
+
+#container-gestion-down {
+    padding: 3rem;
+    padding-top: 1rem;
+}
+
+
+/* responsive para moviles */
+@media screen and (max-width: 640px) {
+    #container-gestion-down, #container-gestion-up {
+    padding: 0rem;
+    margin-top: 2rem;
+    }
+}
+
+
+#row-element-left {
+    width: 20rem;
+    height: 9rem;
+
+}
+
+#row-element-right {
+    text-align: center;
+    
+}
+
+
+img {
+    float:center;
+    width: 20rem;
+    margin-top: 2rem;
+    border-style: double;
+}
+
+.pagination {
+    margin-top: 3rem;
+    color: black;
+}
+

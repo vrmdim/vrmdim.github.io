@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BestPrice</title>
+    <link rel="icon" href="assets/img/favicon.ico">
+    <meta name="author" content="Vicent Ribas">
+    <link rel="stylesheet" href="assets/bootstrap-5.0.2-dist/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="index.css" type="text/css"/>
+    <link rel="stylesheet" href="producto.css" type="text/css"/>
+    <script src="assets/bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+    
+    <!-- Awesome Fonts -->
+    <script src="https://kit.fontawesome.com/02d8b39fed.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light"> -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" id="nav-home" href="index.html">BP</a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="gestion.html">Gestion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">About</a>
+                    </li>
+                  </ul>
+                  <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Buscar producto" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                  </form>
+                </div>
+              </div>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+
+        <section id="gestion">
+            <div class="container">
+                <div class="col">
+                    <div class="row-sm-4" id="container-gestion-up">
+                        <div class="row">
+                            <div class="col-sm-2" id="row-element-left">
+                                
+                                <!-- Filtros-->
+                                <h5>Filtros</h5>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" checked>
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                    Marca Original
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" checked>
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                    Marca Blanca
+                                    </label>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-sm" id="row-element-right">
+                                <div class="row-element-right">
+                                  <section id="titulo">
+                                    <h1> Galletas Oreo </h1>
+                                  </section>
+                                    <img src="assets/img/oreo.jpeg" alt="Oreo">
+                                </div>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="container" id="container-gestion-down">
+                    <!-- tabla productos -->
+                    <table class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th>Marca</th>
+                            <th>Comercio</th>
+                            <th>Lugar</th>
+                            <th>Peso Neto</th>
+                            <th>Precio / Ud</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Oreo</td>
+                            <td>Carrefour</td>
+                            <td>España</td>
+                            <td>200g</td>
+                            <td>3.50€ / 100g</td>
+                          </tr>
+                          <tr>
+                            <td>Alipende</td>
+                            <td>Ahorramas</td>
+                            <td>España</td>
+                            <td>200g</td>
+                            <td>2.50€ / 100g</td>
+                          </tr>
+                          <tr>
+                            <td>Hacendado</td>
+                            <td>Mercadona</td>
+                            <td>España</td>
+                            <td>250g</td>
+                            <td>2.80€ / 100g</td>
+                          </tr>
+                          <tr>
+                            <td>Gourmet</td>
+                            <td>La Tienda De Alba</td>
+                            <td>Vitigudino</td>
+                            <td>200g</td>
+                            <td>3.00€ / 100g</td>
+                          </tr>
+                          <tr>
+                            <td>Oreo</td>
+                            <td>DIA</td>
+                            <td>España</td>
+                            <td>200g</td>
+                            <td>3.60€ / 100g</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <!-- Paginacion -->
+                      <nav aria-label="Page navigation">
+                        <ul class="pagination justify-content-center">
+                          <li class="page-item disabled">
+                            <a class="page-link" href="#" aria-label="Previous">
+                              <span aria-hidden="true">&laquo;</span>
+                              <span class="sr-only"></span>
+                            </a>
+                          </li>
+                          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                              <span aria-hidden="true">&raquo;</span>
+                              <span class="sr-only"></span>
+                            </a>
+                          </li>
+                        </ul>
+                      </nav>
+                </div>
+                </div>
+            </div>
+            
+        </section>
+
+
+
+    </main>
+    
+    <!-- FOOTER -->
+    <footer>
+
+      <div class="col">
+        <div class="col">
+          <a href="#"><i class="fa-brands fa-instagram fa-2xl"  id="social-media-icon-in"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter fa-2xl" id="social-media-icon-tw"></i></a>
+        </div>
+        <div id="copyright">
+            <p>© Copyright 2023</p>
+        </div>
+      </div>
+      
+    </footer>
+
+</body>
+</html>
